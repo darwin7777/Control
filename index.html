@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control</title>
+<link rel="stylesheet" href="css/estilos.css">	
+</head>
+<body>
+<div class="caja1">
+<div class="botondeintercambiar">
+ <div id="btnvai"></div>
+<button type="button" class="botoncambiarcaja" onClick="login()" id="login">Login</button>
+</div>
+<form method="post" action="login.php" id="frmlogin" class="grupo-entradas">
+<div class="ub1">&#128273; Ingresar usuario</div>
+<input type="text" name="txtusuario" placeholder="Usuario" required>
+<div class="ub1">&#128274; Ingresar password</div>
+<input type="password" name="txtpassword" id="txtpassword" placeholder="Password" required>
+
+<div class="ub1">
+<input type="checkbox" onClick="verpassword()" >Mostrar contraseña
+ </div>
+
+<div align="center">
+<input type="submit" value="Ingresar">
+
+<input type="reset" value="Cancelar">
+</div>
+</form>
+
+</body>
+<script>
+  function verpassword()
+  {
+      var tipo = document.getElementById("txtpassword");
+      if(tipo.type == "password")
+	  {
+          tipo.type = "text";
+      }
+	  else 
+	  {
+          tipo.type = "password";
+      } 
+  }
+  
+</script>
+</html>
