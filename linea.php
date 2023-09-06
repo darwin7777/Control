@@ -104,7 +104,7 @@ $rol 	= $_GET["rol"];
 <body>
 <h2>Ingreso de L&iacute;nea de Trabajo</h2>
 <p align="right"><a href="pag_admin.php?user=<?php echo $usu ?>&nombre=<?php echo $nombre ?>&apellido=<?php echo $apellido ?>&rol=<?php echo $rol ?>">
-    <button style="background:#12192a; color:#FFF">Men&uacute;</button>
+    <button style="background:#29DFB9; color:#FFF">Men&uacute;</button>
   </a></p>
 <div class="ub1">&#128273; Ingrese Producto</div>
 <select name="prod" id="prod" style='width:320px; height:40px; background:#CCE5FF; font-size:14px; font-style:inherit' onChange="cantidad()" placeholder="Producto"required>

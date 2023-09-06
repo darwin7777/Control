@@ -8,7 +8,7 @@ $apellido = $_GET["apellido"];
 $rol = $_GET["rol"];
 
 // Paginación
-$registrosPorPagina = 5;
+$registrosPorPagina = 10;
 $paginaActual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
 $offset = ($paginaActual - 1) * $registrosPorPagina;
 
@@ -54,7 +54,7 @@ $totalPaginas = ceil($totalRegistros / $registrosPorPagina);
             padding: 5px 10px;
             margin: 0 5px;
             border: 1px solid #12192a;
-            background-color: #12192a;
+            background-color: #29DFB9;
             color: #fff;
             text-decoration: none;
         }
@@ -70,10 +70,10 @@ $totalPaginas = ceil($totalRegistros / $registrosPorPagina);
 
     <h3><strong>Consulta de Productos</strong></h3>
     <p align="right"><a href="pag_admin.php?user=<?php echo $usu ?>&nombre=<?php echo $nombre ?>&apellido=<?php echo $apellido ?>&rol=<?php echo $rol ?>">
-            <button style="background:#12192a; color:#FFF">Menú</button>
+            <button style="background:#29DFB9; color:#FFF">Menú</button>
         </a></p>
     <table width="100%" border="0">
-        <tr bgcolor="#12192a">
+        <tr bgcolor="#29DFB9">
             <td width="19%">
                 <div align="center" id="white">
                     <h5><strong>Código</strong></h5>
@@ -125,7 +125,7 @@ $totalPaginas = ceil($totalRegistros / $registrosPorPagina);
                     </td>
                     <td>
                         <div align="center">
-                            <input type="button" name="edit" id="edit" value="Editar" style='width:120px; height:30px; background-color:#12192a; color:#FFF; font-size:16px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; text-align:center' onClick="location.href='modificaP.php?nombre=<?php echo $nombre ?>&user=<?php echo $usu; ?>&apellido=<?php echo $apellido; ?>&id=<?php echo $row['id'] ?>&rol=<?php echo $rol ?>'">
+                            <input type="button" name="edit" id="edit" value="Editar" style='width:120px; height:30px; background-color:#29DFB9; color:#FFF; font-size:16px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; text-align:center' onClick="location.href='modificaP.php?nombre=<?php echo $nombre ?>&user=<?php echo $usu; ?>&apellido=<?php echo $apellido; ?>&id=<?php echo $row['id'] ?>&rol=<?php echo $rol ?>'">
                         </div>
                     </td>
                 </tr>

@@ -18,8 +18,9 @@ $rol 	= $_GET["rol"];
 <body>
 
 <tr>
-<th colspan="1"><h1>Bienvenido</h1> <?php echo $nombre . " ". $apellido ?></th>
-<th><a href="index.html"><P>Regresar</P></a></th>
+<th colspan="1"><h1>CONTROL</h1> 
+<h3>Bienvenido:</h3><?php echo $nombre . " ". $apellido ?></th>
+<th><a href="index.html"><P align="right">Regresar</P></a></th>
 
 </tr>
 	  <table width="200" border="0">
@@ -78,7 +79,7 @@ $rol 	= $_GET["rol"];
 	      <td><a href="consultaL.php?user=<?php echo $usu ?>&nombre=<?php echo $nombre ?>&apellido=<?php echo $apellido ?>&rol=<?php echo $rol ?>">Eliminar</a></td>
 	      <td><a href="consultaP.php?user=<?php echo $usu ?>&nombre=<?php echo $nombre ?>&apellido=<?php echo $apellido ?>&rol=<?php echo $rol ?>">Eliminar</a></td>
 	      <td><!--Patel--></td>
-	      </tr>
+        </tr>
   </table>
 </div>
 </header>    

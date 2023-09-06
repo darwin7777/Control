@@ -9,7 +9,7 @@ $id = $_GET["id"];
 $rol = $_GET["rol"];
 
 // Paginación
-$registrosPorPagina = 3;
+$registrosPorPagina = 10;
 $paginaActual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
 $offset = ($paginaActual - 1) * $registrosPorPagina;
 
@@ -116,13 +116,13 @@ while ($r = $query->fetch_object()) {
 
     <h3><strong>Consulta de Lineas de Trabajo</strong></h3>
     <p align="right"><a href="pag_admin.php?user=<?php echo $usu ?>&nombre=<?php echo $nombre ?>&apellido=<?php echo $apellido ?>&rol=<?php echo $rol ?>">
-            <button style="background:#12192a; color:#FFF">Men&uacute;</button>
+            <button style="background:#29DFB9; color:#FFF">Men&uacute;</button>
         </a></p>
     <table width="100%" border="0">
-        <tr bgcolor="#12192a">
-            <td width="34%">
+        <tr bgcolor="#29DFB9 ">
+            <td width="28%">
                 <div align="center" id="white">
-                    <h5><strong>Producto</strong></h5>
+                    <h5 align="justify"><strong>Producto</strong></h5>
                 </div>
             </td>
             <td width="26%">
@@ -135,7 +135,7 @@ while ($r = $query->fetch_object()) {
                     <h5><strong>Cantidad Estimada</strong></h5>
                 </div>
             </td>
-            <td width="19%">
+            <td width="25%">
                 <div align="center" id="white">
                     <h5><strong>Hora</strong></h5>
                 </div>
@@ -218,7 +218,7 @@ while ($r = $query->fetch_object()) {
                     <?php endforeach; ?>
                 ],
                 // backgroundColor: "#3898db",
-                borderColor: "#9b59b6",
+                borderColor: "#29DFB9 ",
                 borderWidth: 2
             }]
         };

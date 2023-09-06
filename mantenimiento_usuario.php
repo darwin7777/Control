@@ -77,7 +77,7 @@ $rol 	= $_GET["rol"];
 <body>
 <h2>Ingreso de usuario</h2>
 <p align="right"><a href="pag_admin.php?user=<?php echo $usu ?>&nombre=<?php echo $nombre ?>&apellido=<?php echo $apellido ?>&rol=<?php echo $rol ?>">
-    <button style="background:#12192a; color:#FFF">Men&uacute;</button>
+    <button style="background:#29DFB9 ; color:#FFF">Men&uacute;</button>
   </a></p>
 <div class="ub1">&#128273; Ingrese usuario</div>
 <input type="text" name="txtusuario" id="txtusuario" placeholder="Usuario"required>

@@ -9,7 +9,8 @@ body
 	left:50%;
 	position: absolute;
 	transform: translate(-50%,-50%);
-background-image: linear-gradient(to right top, #6bd18e, #00bea2, #00a7af, #008fb0, #0075a3, #0a6b98, #10628c, #135981, #005d7b, #006073, #126369, #286460);
+	background-color: #118844; /* Cambia el color de fondo del cuerpo de la página a verde */
+    color: white; /* Cambia el color del texto */
 }
 .ub1
 {
@@ -28,7 +29,7 @@ margin-top:0.5em;
     margin: auto;
     padding: 2em;
 	border-radius: 1em;
-	color:black;
+	color:#29DFB9;
 
 
 }
@@ -65,7 +66,7 @@ input[type=submit],input[type=reset]
 margin-top: 1.5em;
 width:48%;
 text-align:center;
-background-color: #1958AD;
+background-color: #29DFB9 ;
 color:white;
 	cursor:pointer;
 
